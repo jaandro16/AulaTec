@@ -1,0 +1,13 @@
+docker-compose up --build -d
+
+// docker-compose down -v --remove-orphans
+
+docker exec -it laravel-docker bash
+chmod -R 755 /var/www/html
+chown -R www-data:www-data /var/www/html
+
+sudo docker exec laravel-docker bash -c "composer update"
+
+sudo docker exec laravel-docker bash -c "php artisan migrate"
+
+sudo docker exec laravel-docker bash -c "php artisan storage:link"
