@@ -90,10 +90,11 @@ AulaTec/
    exit
    ```
 
-4. **Instalar dependencias y configurar base de datos**
+4. **Instalar dependencias, link simbólico y configurar base de datos**
    ```bash
    sudo docker exec laravel-docker bash -c "composer update"
    sudo docker exec laravel-docker bash -c "php artisan migrate"
+   sudo docker exec laravel-docker bash -c "php artisan storage:link"
    ```
 
 5. **Acceder a la aplicación**
