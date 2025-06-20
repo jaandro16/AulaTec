@@ -74,7 +74,7 @@ AulaTec/
 1. **Clonar el repositorio**
    ```bash
    git clone https://github.com/tu-usuario/AulaTec.git
-   cd AulaTec
+   cd AulaTec/AulaTec/Desarrollo
    ```
 
 2. **Construir e iniciar contenedores**
